@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miroslav Isikiyski - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #2d2d2d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 2px solid #4a4a4a;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #61dafb;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 18px;
+            color: #98d982;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            color: #ffd700;
+            font-size: 14px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 40px;
+        }
+
+        .sidebar {
+            background-color: #3a3a3a;
+            padding: 25px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .content {
+            background-color: #3a3a3a;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #ff6b6b;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #4a4a4a;
+            padding-bottom: 5px;
+        }
+
+        .code-block {
+            background-color: #000000;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border-left: 4px solid #61dafb;
+        }
+
+        .keyword {
+            color: #ff6b6b;
+        }
+
+        .string {
+            color: #98d982;
+        }
+
+        .number {
+            color: #ffd700;
+        }
+
+        .comment {
+            color: #6a9955;
+            font-style: italic;
+        }
+
+        .variable {
+            color: #9cdcfe;
+        }
+
+        .function {
+            color: #dcdcaa;
+        }
+
+        .property {
+            color: #92c5f7;
+        }
+
+        .contact-item {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #2d2d2d;
+            border-radius: 3px;
+        }
+
+        /* .experience-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #000000;
+            border-radius: 5px;
+            border-left: 3px solid #98d982;
+        } */
+
+        .company {
+            font-size: 16px;
+            color: #61dafb;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .position {
+            color: #ffd700;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .duration {
+            color: #ff6b6b;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .achievement {
+            color: #98d982;
+            margin-bottom: 3px;
+            padding-left: 10px;
+        }
+
+        .tech-stack {
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .tech-category {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+
+        .tech-items {
+            color: #9cdcfe;
+            margin-left: 10px;
+        }
+
+        .language-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 5px;
+            background-color: #2d2d2d;
+            border-radius: 3px;
+        }
+
+        .language-name {
+            color: #61dafb;
+        }
+
+        .language-level {
+            color: #98d982;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        @media print {
+            body {
+                background-color: #1a1a1a;
+                color: white;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="code-block">
+                <span class="keyword">struct</span> <span class="company">Curriculum_Vitae</span>&nbsp;{<br>
+                &nbsp;&nbsp;<span class="property">name</span>: <span class="string">"Miroslav Isikiyski"</span>;<br>
+                &nbsp;&nbsp;<span class="property">role</span>: <span class="string">"Principal Engineer | Engineering Manager | Tech Lead"</span>;<br>
+                }
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Contact -->
+                <div class="section">
+                    <div class="section-title">// Contact Information</div>
+                    <div class="code-block">
+                        <span class="keyword">const</span> <span class="variable">contact</span> = {<br>
+                        &nbsp;&nbsp;<span class="property">email</span>: <span class="string">"miroslav.isikiyski@gmail.com"</span>,<br>
+                        &nbsp;&nbsp;<span class="property">mobile</span>: <span class="string">"+359889214935"</span>,<br>
+                        &nbsp;&nbsp;<span class="property">linkedin</span>: <span class="string">"https://www.linkedin.com/in/miroslav-i-36b321124/"</span><br>
+                        };
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="section">
+                    <div class="section-title">// Languages</div>
+                    <div class="code-block">
+                        <span class="keyword">const</span> <span class="variable">languages</span> = {<br>
+                        &nbsp;&nbsp;<span class="property">English</span>: <span class="string">"Full Professional"</span>,<br>
+                        &nbsp;&nbsp;<span class="property">Greek</span>: <span class="string">"Elementary"</span>,<br>
+                        &nbsp;&nbsp;<span class="property">Bulgarian</span>: <span class="string">"Native"</span><br>
+                        };
+                    </div>
+                </div>
+
+                <!-- Core Skills -->
+                <div class="section">
+                    <div class="section-title">// Core Skills</div>
+                    <div class="code-block">
+                        <span class="keyword">const</span> <span class="variable">skills</span> = [<br>
+                        &nbsp;&nbsp;<span class="string">"Team Leadership"</span>,<br>
+                        &nbsp;&nbsp;<span class="string">"System Architecture"</span>,<br>
+                        &nbsp;&nbsp;<span class="string">"Performance Optimization"</span>,<br>
+                        &nbsp;&nbsp;<span class="string">"Backend Development"</span>,<br>
+                        &nbsp;&nbsp;<span class="string">"Automation"</span>,<br>
+                        &nbsp;&nbsp;<span class="string">"Mentoring Senior Engineers,"</span><br>
+                        ];
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Experience -->
+                <div class="section">
+                    <div class="section-title">// Professional Experience</div>
+                    
+                    <!-- Airalo -->
+                    
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">Airalo</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"December 2023 - Present"</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Principal Engineer & Engineering Manager</span><br>
+                            &nbsp;&nbsp;<span class="function">function principalEngineerAndEngineeringManager</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// June 2024 - Present</span><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Lead backend team delivering high-performance systems for global eSIM infrastructure"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Manage technical direction and people management: hiring, 1:1s, mentorship"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Partner with Product and DevOps to align priorities and scope projects"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Designed scalable architecture for async processing and distributed caching"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Coached senior engineers and gave them space to operate independently"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Drove engineering rituals and ensured accountability without bureaucracy"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Advocated for operational maturity: incident postmortems, SLOs, release processes"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Act as bridge between engineering and business stakeholders"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                            <br><br>
+                            &nbsp;&nbsp;<span class="comment">// Senior Software Engineer </span><br>
+                            &nbsp;&nbsp;<span class="function">function seniorSoftwareEngineer</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// December 2023 - June 2024 (7 months)</span><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Developing new systems from scratch,"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Maintaining legacy code and systems,"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Use best practices and techniques for code maintainability and resource optimisation,"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"In charge of multiple PoCs and acrhitecture decisions"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Act as bridge between engineering and business stakeholders"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;};
+                            <br>
+                            <div class="tech-stack">
+                                <span class="tech-category">/*<br>@Tech Stack:</span><br>
+                                <span class="tech-items">PHP 7.4/8.1, JavaScript/Node.js, Python 3, MySQL, Elasticsearch, Redis, DynamoDB, S3, SQS, AWS Lambda, Git, Slim, PHPUnit, Docker, Kubernetes, Swoole, React, vim</span>
+                                <br>*/
+                            </div>
+                        </div>
+                    
+
+                    <!-- Yotpo -->
+                    
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">Yotpo</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"December 2022 - December 2023"</span>;<br><br>
+                            &nbsp;&nbsp;<span class="property">topAchievement</span>: <span class="string">"Introduced and developed the RCS channel and fallback to SMS for non RCS devices from scratch and supported the whole integration process afterwards within Yotpo's systems."</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Senior Software Engineer </span><br>
+                            &nbsp;&nbsp;<span class="function">function seniorSoftwareEngineer</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Developing new systems from scratch,"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Maintaining legacy code and systems,"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Use best practices and techniques for code maintainability and resource optimisation,"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"In charge of multiple PoCs and acrhitecture decisions"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Act as bridge between engineering and business stakeholders"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;};
+                            <br>};
+                            <br>
+                            <div class="tech-stack">
+                                <span class="tech-category">/*<br>@Tech Stack:</span><br>
+                                <span class="tech-items">PHP 7.4/8.1, JavaScript/Node.js, Python 3, MySQL, Elasticsearch, Redis, DynamoDB, S3, SQS, AWS Lambda, Git, Slim, PHPUnit, Docker, Kubernetes, Swoole, React, vim</span>
+                                <br>*/
+                            </div>
+                        </div>
+                    
+
+                    <!-- LINK Mobility -->
+                    
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">LINK_Mobility</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"2 years 4 months"</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Technical Lead</span><br>
+                            &nbsp;&nbsp;<span class="function">technicalLead</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// October 2021 - December 2022 (1 year 3 months)</span><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Led team of 4 skilled developers"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Oversaw code review process and quality standards"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Promoted good practices and led by example"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Responsible for product development of multiple projects"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Organized meetings with internal and external stakeholders"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Motivated team growth and monitored for burnout"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;};<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Senior Software Engineer</span><br>
+                            &nbsp;&nbsp;<span class="function">seniorSoftwareEngineer</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// September 2020 - October 2021 (1 year 2 months)</span><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Developed new backend systems and APIs from scratch"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Maintained current codebase and legacy projects"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Built Test Automation Frameworks with QA department"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Worked full-stack on various projects"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                            <div class="tech-stack">
+                                <span class="tech-category">/*<br>@Tech Stack:</span><br>
+                                <span class="tech-items">PHP 7/8, JavaScript/Node.js, MySQL, Elasticsearch, Redis, Beanstalkd, Mac/Linux, Git, Slim, Phalcon, PHPUnit, Docker, Kubernetes, Swoole, Codeceptjs, vim</span>
+                                <br>*/
+                            </div>
+                        </div>
+                    
+
+                    <!-- Page Break for Print -->
+                    <div class="page-break"></div>
+
+                    <!-- Adcash -->
+                    
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">Adcash</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"2 years 9 months"</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Software Engineer</span><br>
+                            &nbsp;&nbsp;<span class="function">softwareEngineer</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// January 2018 - September 2020</span><br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Developed new backend systems for AdServer project"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Built automation solutions from scratch (Node.js based)"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Onboarded and supported developers with automation tools"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Integrated automation in CI pipelines"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Conducted comprehensive code reviews"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                            <br>
+                            <div class="tech-stack">
+                                <span class="tech-category">/*<br>@Tech Stack:</span><br>
+                                <span class="tech-items">PHP 7.2, Python 3, Node.js, bash, MySQL, Redis, Aerospike, Druid, Mac/Linux, Docker, Jenkins, PHPUnit, Kibana, vim, GitLab, Ansible, Grafana</span>
+                                <br>*/
+                            </div>
+                        </div>
+                    
+
+                    <!-- HedgeServ -->
+                    
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">HedgeServ</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"July 2017 - January 2018 (7 months)"</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Automation QA</span><br>
+                            &nbsp;&nbsp;<span class="function">automationQA</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Maintained and extended internal automation framework"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Analyzed results and generated reports"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Performed regression runs and analysis"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Created automation tests for new features"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                            <br>
+                            <div class="tech-stack">
+                                <span class="tech-category">/*<br>@Tech Stack:</span><br>
+                                <span class="tech-items">Python, MSSQL, GitHub, SVN, SSRS, Investran, Windows</span>
+                                <br>*/
+                            </div>
+                        </div>
+                    
+
+                    <!-- Nuvei -->
+                    
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">Nuvei</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"February 2016 - July 2017 (1 year 6 months)"</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Manual and Automation QA</span><br>
+                            &nbsp;&nbsp;<span class="function">manualAndAutomationQA</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> [<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Manual testing of fintech products"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Backend RESTful API automation with JMeter"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"API unit/integration testing with TestNG"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Created manual test cases in Test Link"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Reported to management and wrote technical documentation"</span>,<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Daily communication with developers on improvements"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;];<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                            <div class="tech-stack">
+                                <span class="tech-category">/*<br>@Tech Stack:</span><br>
+                                <span class="tech-items">MySQL, SVN, JMeter, Java, Cucumber, Postman, FTL, Linux, Windows</span>
+                                <br>*/
+                            </div>
+                        </div>
+                    
+
+                    <!-- Gameloft -->
+                        <div class="code-block">
+                            <span class="keyword">class</span> <span class="company">Gameloft</span> {<br>
+                            &nbsp;&nbsp;<span class="property">totalDuration</span>: <span class="string">"1 year 9 months"</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// Senior QA Role</span><br>
+                            &nbsp;&nbsp;<span class="function">seniorQA</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">period</span>: <span class="string">"October 2015 - February 2016 (5 months)"</span>;<br>
+                            &nbsp;&nbsp;};<br>
+                            <br>
+                            &nbsp;&nbsp;<span class="comment">// QA Role</span><br>
+                            &nbsp;&nbsp;<span class="function">qa</span>() {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="property">period</span>: <span class="string">"June 2013 - October 2015 (2 years 5 months)"</span>;<br>
+                            &nbsp;&nbsp;}<br>
+                            };
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
